@@ -3,6 +3,7 @@ import os
 
 from nltk import pos_tag
 
+
 def flat(_list):
     """ [(1,2), (3,4)] -> [1, 2, 3, 4]"""
     return sum([list(item) for item in _list], [])
@@ -11,6 +12,7 @@ def flat(_list):
 def is_verb(word):
     pos_info = pos_tag([word])
     return pos_info[0][1].startswith('VB')
+
 
 def split_snake_case_name_to_words(name):
     return [n for n in name.split('_') if n]
@@ -41,9 +43,9 @@ def get_py_filenames_in_path(path):
                 break
     return filenames
 
+
 def get_verbs_from_function_name(function_name):
     return [word for word in function_name.split('_') if is_verb(word)]
-
 
 
 def get_public_functions_names_in_trees(trees):
@@ -74,5 +76,3 @@ def get_file_info(filename):
     except SyntaxError as e:
         tree = None, None, None
     return filename, main_file_content, tree
-
-
