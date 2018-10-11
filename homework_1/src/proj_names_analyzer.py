@@ -2,12 +2,12 @@ import ast
 import collections
 import os
 
-
 from nltk import pos_tag
 
-from _common import (
+from proj_names_analyzer_common import (
     get_all_names, get_filled_trees, get_public_functions_names_in_trees,
-    flat, split_snake_case_name_to_words
+    flat, split_snake_case_name_to_words, get_verbs_from_function_name,
+    get_nouns_from_function_name, get_public_variables_names_in_trees
 )
 
 
@@ -15,8 +15,8 @@ def get_all_words_in_path(path):
     trees = get_filled_trees(path)
     fncs = [f for f in flat([get_all_names(t) for t in trees])
             if not (f.startswith('__') and f.endswith('__'))]
-    return flat([split_snake_case_name_to_words(function_name) for
-                 function_name in function_names])
+    return flat([split_snake_case_name_to_words(fnc) for
+                 fnc in fncs])
 
 
 def get_top_verbs_in_path(path, top_size=10):
@@ -27,9 +27,24 @@ def get_top_verbs_in_path(path, top_size=10):
     return collections.Counter(verbs).most_common(top_size)
 
 
+def get_top_nouns_in_path(path, top_size=10):
+    trees = get_filled_trees(path)
+    fncs = get_public_functions_names_in_trees(trees)
+    nouns = flat([get_nouns_from_function_name(function_name) for
+                  function_name in fncs])
+    return collections.Counter(nouns).most_common(top_size)
+
+
 def get_top_functions_names_in_path(path, top_size=10):
     trees = get_filled_trees(path)
     fncs = get_public_functions_names_in_trees(trees)
+    nms = flat([split_snake_case_name_to_words(fnc) for fnc in fncs])
+    return collections.Counter(nms).most_common(top_size)
+
+def get_top_variables_names_in_path(path, top_size=10):
+    trees = get_filled_trees(path)
+    fncs = get_public_variables_names_in_trees(trees)
+    nms = flat([split_snake_case_name_to_words(fnc) for fnc in fncs])
     return collections.Counter(nms).most_common(top_size)
 
 
