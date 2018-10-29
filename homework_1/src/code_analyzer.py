@@ -1,10 +1,7 @@
 import argparse
 
 from loader import cloneGit
-from proj_names_analyzer import (
-    get_top_variables_names_in_path, get_top_functions_names_in_path,
-    get_top_nouns_in_path, get_top_verbs_in_path
-)
+from proj_names_analyzer import PyAnalyzer
 from reporter import reportAsPrint, reportAsJson, reportAsCsv
 
 parser = argparse.ArgumentParser()
@@ -41,13 +38,13 @@ reporter_group.add_argument(
 
 def getReportMsg(args_):
     if args_.nouns:
-        msg = get_top_nouns_in_path(args_.nouns[0])
+        msg = PyAnalyzer.get_top_nouns_in_path(args_.nouns[0])
     elif args_.verbs:
-        msg = get_top_verbs_in_path(args_.verbs[0])
+        msg = PyAnalyzer.get_top_verbs_in_path(args_.verbs[0])
     elif args._funcs:
-        msg = get_top_functions_names_in_path(args_.funcs[0])
+        msg = PyAnalyzer.get_top_functions_names_in_path(args_.funcs[0])
     elif args_.vars:
-        msg = get_top_variables_names_in_path(args_.vars[0])
+        msg = PyAnalyzer.get_top_variables_names_in_path(args_.vars[0])
     return msg
 
 

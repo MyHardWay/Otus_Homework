@@ -30,19 +30,21 @@ def get_trees(_path, with_filenames=False, with_file_content=False):
     trees = []
     filenames = get_py_filenames_in_path(_path)
     for filename in filenames:
+        tree_ = {}
         filename, main_file_content, tree = get_file_info(filename)
         if tree is None:
             continue
         if with_filenames:
             if with_file_content:
-                trees.append({
+                tree_ = {
                     'filename': filename,
                     'main_file_content': main_file_content, 'tree': tree
-                })
+                }
             else:
-                trees.append({'filename': filename, 'tree': tree})
+                tree_ = {'filename': filename, 'tree': tree}
         else:
-            trees.append({'tree': tree})
+            tree_ = {'tree': tree}
+        trees.append(tree_)    
     return trees
 
 
