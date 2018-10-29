@@ -22,9 +22,9 @@ proj_name_analyzer.py - Предоставляет набор функций д�
 Пример использования:
 
 
-from proj_name_analyzer import get_top_functions_names_in_path
-project_path = /your/project/path/
-res_msg = get_top_functions_names_in_path(project_path)
+    from proj_name_analyzer import get_top_functions_names_in_path
+    project_path = /your/project/path/
+    res_msg = get_top_functions_names_in_path(project_path)
 
 
 
@@ -35,13 +35,13 @@ reporter.py - Позволяет сохранять отчёты в csv/json ф�
 
 Пример использования:
 
-from reporter import reportAsJson
-from proj_name_analyzer import get_top_functions_names_in_path
+    from reporter import reportAsJson
+    from proj_name_analyzer import get_top_functions_names_in_path
 
-report_path = /your/local/dir/test.json
-project_path = /your/project/path/
-res_msg = get_top_functions_names_in_path(project_path)
-reportAsJson(rep_msg)
+    report_path = /your/local/dir/test.json
+    project_path = /your/project/path/
+    res_msg = get_top_functions_names_in_path(project_path)
+    reportAsJson(rep_msg)
 
 
 
@@ -50,11 +50,11 @@ loader.py - Загружает исходники с удалённого реп
 
 Пример использования:
 
-from loader import cloneGit
+    from loader import cloneGit
 
-project_path = /your/project/path/
-repo_url = 'http://your/repo/url/'
-cloneGit(repo_url, project_path)
+    project_path = /your/project/path/
+    repo_url = 'http://your/repo/url/'
+    cloneGit(repo_url, project_path)
 
 
 code_analyzer.py - Агрегирует в себе все возможности библиотеки и запускается из командной строки
@@ -77,8 +77,8 @@ Way_to_report:
 
 Пример использования:
 
-python3 code_analyzer.py clone --r https://github.com/MyHardWay/Otus_Homework --p /your/local/path
-python3 code_analyzer.py analyze --nouns /your/local/path --tocsv /your/local/path/file.csv
+    python3 code_analyzer.py clone --r https://github.com/MyHardWay/Otus_Homework --p /your/local/path
+    python3 code_analyzer.py analyze --nouns /your/local/path --tocsv /your/local/path/file.csv
 
 
 
