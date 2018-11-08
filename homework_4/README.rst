@@ -21,7 +21,7 @@ main.py
 По умолчанию приложение запускается с ключём DEBUG=True, который отвечает за вывод отладочной информации.
 При использовании приложения на продакшене, следует убрать его из списка параметров
 
-.. code-block:: console
+
 	app.run(debug=True)
 
 
@@ -31,17 +31,17 @@ config.py
 Модуль конфигурации.
 
 Задаёт расположение базы данных
-.. code-block:: console
+
 	SQLALCHEMY_DATABASE_URI
 
 
 Задаёт расположение файлов миграции
-.. code-block:: console
+
 	SQLALCHEMY_MIGRATE_REPO
 
 
 Задаёт расположение статических файлов
-.. code-block:: console
+
 	static_url_path = '/static/'
 
 
@@ -60,11 +60,11 @@ config.py
 
 Flask предусматривает встроенный веб-сервер, который не предусмотрен для использования
 на боевых серверах
-.. code-block:: console
+
 	python3 main.py
 
 Для использования на боевых серверах рекомендуется использования веб-сервера вроде gunicorn
-.. code-block:: console
+
 	gunicorn -b 0.0.0.0:8000 main:app
 
 
