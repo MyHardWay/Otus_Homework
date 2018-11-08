@@ -65,6 +65,8 @@ header{float: left; width:100%}
 .banner-sec .carousel-control.left, .banner-sec .carousel-control.right{background: none;}
 .banner-sec .card{margin-bottom:20px;}
 
-
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
 
 .tab-content {padding-top: 20px;}

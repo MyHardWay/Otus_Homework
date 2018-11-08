@@ -13,7 +13,20 @@ def main():
     return render_template('products.html', products=products)
 
 
+
 @products_pages.route('/products/<product_id>')
 def show_product_info(product_id):
-    product_ = Product.query.filter_by(id=product_id).first()
-    return render_template('product_info.html', product=product_)
+    try:
+        product_ = Product.query.filter_by(id=product_id).first()
+        return render_template('product_info.html', product=product_)
+    except:
+        return render_template('404.html')
+    
+    
+@products_pages.app_errorhandler(500)
+def server_error(e):
+    return render_template('404.html')
+
+@products_pages.app_errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html')
