@@ -1,0 +1,22 @@
+{% extends "basic.html" %}
+
+{% block body %}
+   <div class="row">	
+{% for product in products %}
+
+   <div class="col-md-6">
+        <div class="card"> <img class="img-fluid" style='max-height: 480px;' src= "{{ url_for('static', filename='imgs/' + product.filepath) }}" alt="">
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="/products/{{product.id}}">{{ product.name }}</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>{{ product.prize }} руб.</em></small></p>
+          </div>
+              </div>
+      </div>
+
+
+
+{% endfor %}
+   </div>
+{% endblock %}
