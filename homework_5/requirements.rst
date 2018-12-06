@@ -2,14 +2,9 @@
 Используемые пакеты
 ===================
 
-Flask для python3
+sqlite3 для python3
 
 .. code-block:: console
 
-	pip3 install Flask
+	pip3 install sqlite3
 
-Flask для python3
-
-.. code-block:: console
-
-	pip3 install flask-sqlalchemy
