@@ -4,3 +4,8 @@ homework_4/src/__pycache__/*
 homework_4/__pycache__
 homework_4/
 homework_5/db
+homework_5/src/__pycache__
+homework_5/build
+homework_5/dist
+homework_5/otus_orm_ht.egg-info
+.idea/*

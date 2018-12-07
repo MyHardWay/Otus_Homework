@@ -13,7 +13,7 @@ class Posts(Base):
     __tablename__ = 'posts'
 
     id = ('INTEGER', 'not null')
-    postname = ('INTEGER', 'PRIMARY KEY', 'AUTOINCREMENT')
+    postname = ('INTEGER', 'PRIMARY KEY AUTOINCREMENT')
     user_id = ('INTEGER', 'not null')
 
     __relationships__ = (('user_id', 'users', 'id'),)

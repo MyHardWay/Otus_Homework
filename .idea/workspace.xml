@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148ae89e-19a6-4e55-8750-19d5fde76852" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/homework_5/requirements.rst" beforeDir="false" afterPath="$PROJECT_DIR$/homework_5/requirements.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_5/src/db" beforeDir="false" afterPath="$PROJECT_DIR$/homework_5/src/db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/build/lib.linux-x86_64-2.7/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/build/lib.linux-x86_64-2.7/src/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/build/lib.linux-x86_64-2.7/src/example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/build/lib.linux-x86_64-2.7/src/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/dist/otus-orm-ht-1.3.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/dist/otus_orm_ht-1.3-py2-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/otus_orm_ht.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/otus_orm_ht.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/otus_orm_ht.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/otus_orm_ht.egg-info/not-zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/otus_orm_ht.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/otus_orm_ht.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_5/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitingore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitingore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Otus.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_5/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/homework_5/README.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework_5/src/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_5/src/errors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework_5/src/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_5/src/example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework_5/src/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_5/src/models.py" afterDir="false" />
@@ -19,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework_5/src/example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="13" lean-forward="true" selection-start-line="11" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="188">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -31,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework_5/src/errors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -40,13 +60,61 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework_5/src/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_4/README.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_5/README.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_5/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_5/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitingore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_5/requirements.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -60,9 +128,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/homework_5/setup.py" />
+        <option value="$PROJECT_DIR$/homework_5/__init__.py" />
+        <option value="$PROJECT_DIR$/.gitingore" />
+        <option value="$PROJECT_DIR$/homework_5/README.rst" />
         <option value="$PROJECT_DIR$/homework_5/src/errors.py" />
-        <option value="$PROJECT_DIR$/homework_5/src/example.py" />
         <option value="$PROJECT_DIR$/homework_5/src/models.py" />
+        <option value="$PROJECT_DIR$/homework_5/src/example.py" />
       </list>
     </option>
   </component>
@@ -119,6 +191,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.example">
+    <configuration name="errors" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Otus" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/homework_5/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework_5/src/errors.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Otus" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,6 +257,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.example" />
+        <item itemvalue="Python.errors" />
         <item itemvalue="Python.models" />
       </list>
     </recent_temporary>
@@ -183,18 +277,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="25" width="1922" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.32977587" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32977587" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32977587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -205,24 +298,53 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/homework_4/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_5/requirements.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_5/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitingore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_5/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_5/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homework_5/src/errors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_5/src/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_5/src/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="13" lean-forward="true" selection-start-line="11" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="188">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
