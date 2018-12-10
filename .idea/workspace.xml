@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="148ae89e-19a6-4e55-8750-19d5fde76852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/homework_6/README.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/requirements.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_6/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_6/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/templates/product_info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/templates/products.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/ath-ckr7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/audio-tecknika.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/beats.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/jbl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/marshal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/templates/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/wsgi.py" beforeDir="false" />
-    </list>
+    <list default="true" id="148ae89e-19a6-4e55-8750-19d5fde76852" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +312,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="25" width="1922" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />

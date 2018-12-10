@@ -11,3 +11,4 @@ homework_5/otus_orm_ht.egg-info
 .idea/*
 homework_6/src/webshop/webshop/__pycache__/
 homework_6/src/webshop/products/__pycache__/
+homework_6/src/webshop/db.sqlite3
