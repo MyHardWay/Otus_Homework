@@ -2,20 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148ae89e-19a6-4e55-8750-19d5fde76852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/products/templates/product_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/products/templates/products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/products/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/static/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/static/imgs/ath-ckr7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/static/imgs/audio-tecknika.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/static/imgs/beats.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/static/imgs/jbl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/static/imgs/marshal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/templates/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_6/webshop/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_6/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework_6/requirements.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_6/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_6/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/templates/product_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/templates/products.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/products/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/ath-ckr7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/audio-tecknika.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/beats.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/jbl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/static/imgs/marshal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_6/webshop/webshop/wsgi.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,27 +39,36 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_4/src/templates/products.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_6/webshop/webshop/urls.py">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="405">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
-                <element signature="e#640#672#0" expanded="true" />
+                <element signature="e#640#681#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/homework_6/webshop/products/urls.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -55,68 +77,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_4/src/views.py">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="105">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_6/webshop/static/css/app.css">
+        <entry file="file://$PROJECT_DIR$/homework_6/requirements.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="-499">
+              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homework_6/README.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_6/webshop/products/views.py">
+        <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/templates/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_4/src/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="13" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_6/webshop/products/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_6/webshop/webshop/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-487">
-              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_6/webshop/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -132,6 +138,8 @@
     <findStrings>
       <find>&quot;</find>
       <find>print</find>
+      <find>deb</find>
+      <find>django.te</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,13 +155,21 @@
         <option value="$PROJECT_DIR$/homework_5/src/errors.py" />
         <option value="$PROJECT_DIR$/homework_5/src/models.py" />
         <option value="$PROJECT_DIR$/homework_5/src/example.py" />
-        <option value="$PROJECT_DIR$/homework_6/webshop/webshop/settings.py" />
         <option value="$PROJECT_DIR$/homework_6/webshop/__init__.py" />
-        <option value="$PROJECT_DIR$/homework_6/webshop/webshop/urls.py" />
-        <option value="$PROJECT_DIR$/homework_6/webshop/products/models.py" />
-        <option value="$PROJECT_DIR$/homework_6/webshop/products/views.py" />
         <option value="$PROJECT_DIR$/homework_6/webshop/products/templates/urls.py" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/products/models.py" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/templates/base.html" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/products/templates/products.html" />
         <option value="$PROJECT_DIR$/homework_6/webshop/products/urls.py" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/products/templates/product_info.html" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/products/views.py" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/webshop/views.py" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/webshop/urls.py" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/webshop/settings.py" />
+        <option value="$PROJECT_DIR$/homework_6/webshop/templates/404.html" />
+        <option value="$PROJECT_DIR$/homework_6/src/webshop/products/views.py" />
+        <option value="$PROJECT_DIR$/homework_6/requirements.rst" />
+        <option value="$PROJECT_DIR$/homework_6/README.rst" />
       </list>
     </option>
   </component>
@@ -203,34 +219,6 @@
               <item name="Otus" type="462c0819:PsiDirectoryNode" />
               <item name="homework_6" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Otus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Otus" type="462c0819:PsiDirectoryNode" />
-              <item name="homework_6" type="462c0819:PsiDirectoryNode" />
-              <item name="webshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Otus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Otus" type="462c0819:PsiDirectoryNode" />
-              <item name="homework_6" type="462c0819:PsiDirectoryNode" />
-              <item name="webshop" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Otus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Otus" type="462c0819:PsiDirectoryNode" />
-              <item name="homework_6" type="462c0819:PsiDirectoryNode" />
-              <item name="webshop" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Otus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Otus" type="462c0819:PsiDirectoryNode" />
-              <item name="homework_6" type="462c0819:PsiDirectoryNode" />
-              <item name="webshop" type="462c0819:PsiDirectoryNode" />
-              <item name="webshop" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -243,13 +231,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/homework_6/src" />
       <recent name="$PROJECT_DIR$/homework_6/webshop" />
       <recent name="$PROJECT_DIR$/homework_6/webshop/templates" />
       <recent name="$PROJECT_DIR$/homework_6/webshop/template" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/homework_6/webshop/products" />
       <recent name="$PROJECT_DIR$/homework_6" />
+      <recent name="$PROJECT_DIR$/homework_6/webshop/products" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,14 +343,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.32977587" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32977587" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32870865" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32977587" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32977587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -431,23 +420,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_5/src/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework_4/src/templates/product_info.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_4/src/templates/products.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_6/webshop/__init__.py">
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_4/src/models.py">
@@ -457,14 +436,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_6/webshop/products/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework_6/webshop/static/css/app.css">
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/static/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
@@ -481,45 +453,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_6/webshop/webshop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-487">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework_6/webshop/products/templates/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_6/webshop/webshop/urls.py">
+    <entry file="file://$PROJECT_DIR$/homework_5/src/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="225">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
-            <element signature="e#640#672#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_6/webshop/products/views.py">
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/templates/product_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/templates/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="127" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="127" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_6/webshop/products/urls.py">
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#640#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/templates/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/webshop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-499">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/requirements.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_6/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>
