@@ -2,95 +2,55 @@
 Описание
 ===================
 
-uwsgi --socket 127.0.0.1:8000 -b 32768 --protocol=http --wsgi-file main_app.py
-
-
-
-Библиотека предоставляет набор функций для анализа используемых именований публичных функций и переменных проекта, загружать код проекта,
-выводить отчёты, а также скрипт агрегирующий в себе весь это функционал.
+UWSGI сервер. Позволяет назначить на каждый url свой обработчик,
+разбирает входящие параметры, также позволяет настраивать поведенее при
+наличии или отсутствии обратного слэша.
 
 Установка и Автозагрузка
-===============
+========================
 
-Необходимо загрузить исходные коды пакета в виде Zip архива - https://github.com/MyHardWay/Otus_Homework/archive/master.zip
-Или клонировать репозиторий - https://github.com/MyHardWay/Otus_Homework.git
+Необходимо загрузить исходные коды пакета в виде Zip архива:
+https://github.com/MyHardWay/Otus_Homework/archive/master.zip
+Или клонировать репозиторий:
+https://github.com/MyHardWay/Otus_Homework.git
 
-Использование 
-===============
+Фукнциональные модули
+======================
 
-proj_name_analyzer.py - Предоставляет набор функций для анализа используемых именований публичных функций и переменных проекта
--------------------------
+server.py - uwsgi сервер.
+------------------------------------------------
 
+Реализиует uwsgi сервер. Для определения поведения сервера
+"закрывающего" слэша необходимо переопределить переменную
 
-Пример использования:
+    redirect_when_no_trailing_slash
 
+True(по-умолчанию) - когда необходимо переадресовывать на указанный url,
+но с закрытым слэшом, иначе (False) - оставаться на указанном url.
 
-    from proj_name_analyzer import get_top_functions_names_in_path
-    project_path = /your/project/path/
-    res_msg = get_top_functions_names_in_path(project_path)
-
-
-
-
-
-reporter.py - Позволяет сохранять отчёты в csv/json файлах или выводить в консоль
--------------------------
+Для запуска сервера создаём его экземпляр и запускаем модуль из
+командной строки
 
 Пример использования:
 
-    from reporter import reportAsJson
-    from proj_name_analyzer import get_top_functions_names_in_path
 
-    report_path = /your/local/dir/test.json
-    project_path = /your/project/path/
-    res_msg = get_top_functions_names_in_path(project_path)
-    reportAsJson(rep_msg)
+     uwsgi --http :9090 --wsgi-file test.py
 
 
 
-loader.py - Загружает исходники с удалённого репозитория
+
+
+test.py
 -------------------------
+
+Модуль, демонстрирующий работу с uwsgi-сервером
 
 Пример использования:
 
-    from loader import cloneGit
-
-    project_path = /your/project/path/
-    repo_url = 'http://your/repo/url/'
-    cloneGit(repo_url, project_path)
+    uwsgi --http :9090 --wsgi-file test.py
 
 
-code_analyzer.py - Агрегирует в себе все возможности библиотеки и запускается из командной строки
--------------------------
 
-Параметры запуска:
-clone --r [Repository_url] --p [Path_to_your_project] - Клонирует удалённый репозиторий в указанную директорию  
-
-analyze [function] [[Path_to_your_project] [Way_to_report]   
-
-functions:
-
---nouns - Показывает статистику по самым используемым существительным  
-
---verbs - Показывает статистику по самым используемым глаголам   
-
---funcs - Показывает статистику по самым используемым существительным   
-
---vars Показывает статистику по самым используемым существительным    
-
-Way_to_report: 
-
---tocsv - Выводит отчёт в csv файл  
-
---tojson - Выводит отчёт в json файл  
-
---toprint - Выводит отчёт в консоль  
-
-
-Пример использования:
-
-    python3 code_analyzer.py clone --r https://github.com/MyHardWay/Otus_Homework --p /your/local/path
-    python3 code_analyzer.py analyze --nouns /your/local/path --tocsv /your/local/path/file.csv
 
 
 

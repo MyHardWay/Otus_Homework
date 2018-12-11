@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148ae89e-19a6-4e55-8750-19d5fde76852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/homework_3/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_3/src/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitingore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitingore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_3/src/common_main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_3/src/main_app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_3/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/homework_3/README.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +29,11 @@
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework_3/src/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="-360">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="35" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -59,7 +55,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework_3/README.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
@@ -153,6 +149,7 @@
         <option value="$PROJECT_DIR$/homework_3/src/__init__.py" />
         <option value="$PROJECT_DIR$/homework_3/src/test.py" />
         <option value="$PROJECT_DIR$/homework_3/src/server.py" />
+        <option value="$PROJECT_DIR$/homework_3/README.rst" />
       </list>
     </option>
   </component>
@@ -410,11 +407,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.32977587" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32870865" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32870865" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32977587" />
@@ -622,9 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_3/README.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework_6/src/webshop/products/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -645,6 +639,16 @@
     <entry file="file://$PROJECT_DIR$/homework_3/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/homework_3/src/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homework_3/src/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -652,15 +656,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_3/src/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/homework_3/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>
