@@ -8,7 +8,7 @@ homework_5/src/__pycache__
 homework_5/build
 homework_5/dist
 homework_5/otus_orm_ht.egg-info
-.idea/*
+.idea/
 homework_6/src/webshop/webshop/__pycache__/
 homework_6/src/webshop/products/__pycache__/
 homework_6/src/webshop/db.sqlite3
