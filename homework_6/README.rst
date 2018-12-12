@@ -6,8 +6,9 @@
 ===================
 
 Проект представляет из себя многостраничный интернет магазин. Написан на связке python3 + django.
-Для хранения данных используется БД SQLite.
-Сайт позволяет просмотерть весь список товаров, а также детали каждого из товаров.
+Для хранения данных используется БД SQLite. На данный момент сайт предоставляет информацию
+только о сущности "товар". Для наполнения сайта используется стандартная админка
+djano. Сайт позволяет просмотерть весь список товаров, а также детали каждого из товаров.
 
 
 
@@ -16,9 +17,51 @@
 
 /products - Страница со списком доступных товаров
 
+![Product](screenshots/products.png)
+
+
 /products/<product_id> - Страница со конкретным товаром
 
+![Products](screenshots/product.png)
+
 В других случаях отображается 404 страница
+
+
+Переменные среды
+======================
+
+Проект использует django-configurations для запуска в различных режимах.
+В данный момент поддерживается 2 режима : Debug и Prod.
+Для работы необходимо установить следующие переменные среды:
+
+
+
+secret_KEY:
+
+    export secret_KEY='your_secret_key'
+
+DJANGO_SETTINGS_MODULE:
+
+    export DJANGO_SETTINGS_MODULE=webshop.settings
+
+
+DJANGO_CONFIGURATION:
+
+    export DJANGO_CONFIGURATION=Dev
+
+
+Установка проекта
+======================
+
+Необходимо загрузить исходные коды пакета в виде Zip архива:
+https://github.com/MyHardWay/Otus_Homework/archive/master.zip
+
+Или клонировать репозиторий:
+
+    git clone https://github.com/MyHardWay/Otus_Homework.git
+
+
+
 
 
 Запуск
@@ -29,6 +72,9 @@ Django предусматривает встроенный веб-сервер, 
 
 	python3 manage.py runserver 0.0.0.0:5000
 
+Для запуска с боевыми настройками
+
+    python3 manage.py runserver --configuration=Prod
 
 
 

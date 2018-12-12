@@ -1,10 +1,13 @@
 from django.conf.urls import url
 
-from .views import show_products, show_product_info
+from .views import Product_Info, Products_List
 
 
 urlpatterns = [
-    url(r'^$', show_products),
-    url(r'^(?P<product_id>\w+)/$', show_product_info)
+    url(
+        r'^(?P<product_id>\w+)/$',
+        Product_Info.as_view(), name='product_info'),
+    url(r'^$', Products_List.as_view()),
+
 
 ]

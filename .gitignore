@@ -1,0 +1,4 @@
+.idea/
+__pycache__/
+homework_6/src/webshop/db.sqlite3
+
