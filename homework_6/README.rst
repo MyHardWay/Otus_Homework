@@ -17,12 +17,8 @@ djano. Сайт позволяет просмотерть весь список 
 
 /products - Страница со списком доступных товаров
 
-![Product](screenshots/products.png)
-
 
 /products/<product_id> - Страница со конкретным товаром
-
-![Products](screenshots/product.png)
 
 В других случаях отображается 404 страница
 
