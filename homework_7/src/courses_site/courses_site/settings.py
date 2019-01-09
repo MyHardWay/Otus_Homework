@@ -1,9 +1,8 @@
 import os
 
+from configurations import Configuration
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-from configurations import Configuration
 
 
 class Dev(Configuration):
@@ -19,9 +18,22 @@ class Dev(Configuration):
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
-        'rest-framework',
-        'entity-information'
+        'entity_information',
+        'rest_framework',
+        'rest_auth',
+        'django.contrib.sites',
+        'allauth',
+        'allauth.account',
+        'rest_auth.registration'
     ]
+
+    REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'rest_framework.authentication.BasicAuthentication',
+            'rest_framework.authentication.SessionAuthentication',
+        )
+    }
+
 
     MIDDLEWARE_CLASSES = [
         'django.middleware.security.SecurityMiddleware',
@@ -34,7 +46,7 @@ class Dev(Configuration):
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
     ]
 
-    ROOT_URLCONF = 'webshop.urls'
+    ROOT_URLCONF = 'courses_site.urls'
 
     TEMPLATES = [
         {
@@ -49,7 +61,7 @@ class Dev(Configuration):
                     'django.template.context_processors.request',
                     'django.contrib.auth.context_processors.auth',
                     'django.contrib.messages.context_processors.messages',
-                    'django.core.context_processors.static'
+                    'django.template.context_processors.static'
                 ],
             },
         },

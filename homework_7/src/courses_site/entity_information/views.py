@@ -1,24 +1,39 @@
-from django.shortcuts import render
-
+from rest_framework import viewsets
+from rest_framework.authentication import SessionAuthentication,\
+    BasicAuthentication
 from django.contrib.auth.models import User
-from myapp.serializers import UserSerializer
+from .models import Course
+
+from .serializers import UserSerializer, CourseSerializer
+#from myapp.serializers import UserSerializer
 from rest_framework import generics
 from rest_framework.permissions import IsAdminUser
 
-class UserList(generics.ListCreateAPIView):
-    queryset = User.objects.all()
+class CourseViewSet(viewsets.ModelViewSet):
+    """
+    A simple ViewSet for viewing and editing the accounts
+    associated with the user.
+    """
+
+    authentication_classes = (SessionAuthentication, BasicAuthentication)
+    serializer_class = CourseSerializer
+    queryset = Course.objects.all()
+
+    """
+    def get_queryset(self):
+        return self.request.user.accounts.all()
+    """
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    A simple ViewSet for viewing and editing the accounts
+    associated with the user.
+    """
+
     serializer_class = UserSerializer
-    permission_classes = (IsAdminUser,)
-
-For more complex cases you might also want to override various methods on the view class. For example.
-
-class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
-    serializer_class = UserSerializer
-    permission_classes = (IsAdminUser,)
 
-    def list(self, request):
-        # Note the use of `get_queryset()` instead of `self.queryset`
-        queryset = self.get_queryset()
-        serializer = UserSerializer(queryset, many=True)
-        return Response(serializer.data)
+    """
+    def get_queryset(self):
+        return self.request.user.accounts.all()
+    """
