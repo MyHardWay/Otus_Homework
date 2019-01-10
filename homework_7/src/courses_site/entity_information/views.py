@@ -1,39 +1,58 @@
-from rest_framework import viewsets
-from rest_framework.authentication import SessionAuthentication,\
-    BasicAuthentication
-from django.contrib.auth.models import User
-from .models import Course
+from rest_framework import viewsets, views, status
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.response import Response
+from django.contrib.auth import authenticate, login, logout
+from .models import Course, Student
 
-from .serializers import UserSerializer, CourseSerializer
-#from myapp.serializers import UserSerializer
-from rest_framework import generics
-from rest_framework.permissions import IsAdminUser
+from .serializers import CourseSerializer
+
 
 class CourseViewSet(viewsets.ModelViewSet):
-    """
-    A simple ViewSet for viewing and editing the accounts
-    associated with the user.
-    """
 
-    authentication_classes = (SessionAuthentication, BasicAuthentication)
+    permission_classes = (IsAuthenticated,)
     serializer_class = CourseSerializer
     queryset = Course.objects.all()
 
-    """
-    def get_queryset(self):
-        return self.request.user.accounts.all()
-    """
 
-class UserViewSet(viewsets.ModelViewSet):
-    """
-    A simple ViewSet for viewing and editing the accounts
-    associated with the user.
-    """
+class StudentView(views.APIView):
+    permission_classes = (IsAuthenticated,)
 
-    serializer_class = UserSerializer
-    queryset = User.objects.all()
+    def post(self, request):
+        data = request.data
 
-    """
-    def get_queryset(self):
-        return self.request.user.accounts.all()
-    """
+        course_id = data.get('course')
+        if course_id:
+            student = Student.objects.get(id=data.user.id)
+            course = Course.objects.get(id=course_id)
+            student.courses.add([course])
+            return Response(status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+
+class LoginView(views.APIView):
+    permission_classes = (AllowAny,)
+
+    def post(self, request):
+        data = request.data
+
+        username = data.get('username')
+        password = data.get('password')
+
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            if user.is_active:
+                login(request, user)
+
+                return Response(status=status.HTTP_200_OK)
+            else:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+        else:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+
+class LogoutView(views.APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request, format=None):
+        logout(request)
+        return Response(status=status.HTTP_200_OK)

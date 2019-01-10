@@ -20,20 +20,16 @@ class Dev(Configuration):
         'django.contrib.staticfiles',
         'entity_information',
         'rest_framework',
-        'rest_auth',
-        'django.contrib.sites',
-        'allauth',
-        'allauth.account',
-        'rest_auth.registration'
     ]
 
     REST_FRAMEWORK = {
         'DEFAULT_AUTHENTICATION_CLASSES': (
-            'rest_framework.authentication.BasicAuthentication',
             'rest_framework.authentication.SessionAuthentication',
+        ),
+        'DEFAULT_PERMISSION_CLASSES': (
+            'rest_framework.permissions.IsAuthenticated',
         )
     }
-
 
     MIDDLEWARE_CLASSES = [
         'django.middleware.security.SecurityMiddleware',

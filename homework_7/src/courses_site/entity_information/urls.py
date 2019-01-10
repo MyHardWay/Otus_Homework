@@ -1,14 +1,16 @@
 from django.conf.urls import url, include
-
 from rest_framework.routers import DefaultRouter
 
-from .views import CourseViewSet, UserViewSet
+from .views import CourseViewSet, StudentView, LoginView, LogoutView
 
 router = DefaultRouter()
 router.register('course', CourseViewSet)
-router.register('user', UserViewSet)
-
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    url(r'^api/', include(router.urls)),
+    url(r'^api/user', StudentView.as_view()),
+    url(r'^login', LoginView.as_view()),
+    url(r'^logout', LogoutView.as_view()),
+
+
 ]

@@ -21,6 +21,12 @@ sqlite3 для python3
 
 	pip3 install sqlite3
 
+djangorestframework для python3
+
+.. code-block:: console
+
+	pip3 install djangorestframework
+
 
 
 
