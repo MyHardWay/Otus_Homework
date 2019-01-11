@@ -2,7 +2,7 @@ from rest_framework import viewsets, views, status
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from django.contrib.auth import authenticate, login, logout
-from .models import Course, Student
+from .models import Course
 
 from .serializers import CourseSerializer
 
@@ -22,9 +22,11 @@ class StudentView(views.APIView):
 
         course_id = data.get('course')
         if course_id:
-            student = Student.objects.get(id=data.user.id)
-            course = Course.objects.get(id=course_id)
-            student.courses.add([course])
+            try:
+                course = Course.objects.get(id=course_id)
+                course.students.add([data.user])
+            except Course.ObjectDoesNotExist:
+                return Response(status=status.HTTP_404_NOT_FOUND)
             return Response(status=status.HTTP_200_OK)
         return Response(status=status.HTTP_404_NOT_FOUND)
 
@@ -42,12 +44,9 @@ class LoginView(views.APIView):
         if user is not None:
             if user.is_active:
                 login(request, user)
-
                 return Response(status=status.HTTP_200_OK)
-            else:
-                return Response(status=status.HTTP_404_NOT_FOUND)
-        else:
             return Response(status=status.HTTP_404_NOT_FOUND)
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
 
 class LogoutView(views.APIView):
