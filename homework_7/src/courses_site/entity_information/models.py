@@ -33,3 +33,15 @@ class Lesson(models.Model):
 
     def __repr__(self):
         return "Lesson: {}".format(self.title)
+
+
+class Profile(models.Model):
+
+    user = models.OneToOneField(settings.AUTH_USER_MODEL)
+    img_path = models.CharField(max_length=128, unique=True)
+    add_info = models.CharField(max_length=128)
+    name = models.CharField(max_length=128)
+    second_name = models.CharField(max_length=128)
+
+    def __repr__(self):
+        return "User: {} {}".format(self.name, self.second_name)
