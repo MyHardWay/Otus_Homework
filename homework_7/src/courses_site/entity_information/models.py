@@ -37,7 +37,7 @@ class Lesson(models.Model):
 
 class Profile(models.Model):
 
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, related_name='user')
     img_path = models.CharField(max_length=128, unique=True)
     add_info = models.CharField(max_length=128)
     name = models.CharField(max_length=128)
