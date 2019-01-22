@@ -2,6 +2,9 @@ import {login} from  "../static/js/login"
 import {register} from "../static/js/reg"
 
 
+
+
+
 function init()  {
     addEv2Cls('card__fio', log, 'click');
     addEv2Cls('header__item', changeCss, 'mouseenter');

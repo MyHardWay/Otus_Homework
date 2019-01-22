@@ -3,7 +3,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from django.contrib.auth import authenticate, login, logout
 from .models import Course
-
+from django.contrib.auth.forms import UserCreationForm
 from .serializers import CourseSerializer
 
 
@@ -55,3 +55,21 @@ class LogoutView(views.APIView):
     def get(self, request, format=None):
         logout(request)
         return Response(status=status.HTTP_200_OK)
+
+
+class RegisterView(views.APIView):
+    permission_classes = (AllowAny,)
+
+    def post(self, request):
+
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return Response(status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+
