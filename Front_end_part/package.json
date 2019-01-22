@@ -1,0 +1,18 @@
+{
+  "name": "front_end_part",
+  "version": "1.0.0",
+  "description": "Otus lessons site",
+  "main": "templates/app.js",
+  "scripts": {
+    "build": "webpack -p --mode production",
+    "watch": "webpack --watch --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.29.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.1"
+  }
+}

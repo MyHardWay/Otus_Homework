@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- <link rel="stylesheet/less" type="text/css"  href="styles.less"> -->
     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.3/less.min.js" ></script> -->
-     <script src="app.js"></script>
+     <script src="../dist/bundle.js"></script>
 </head>
 <body>
 <div class="auth-bg">
@@ -14,26 +14,22 @@
         <h2>Register</h2>
         <div class="auth-bg__input-field">
             <span>Login</span>
-            <input type="text" id="register-login">
+            <input type="text" id="register-form__login">
         </div>
         <div class="auth-bg__input-field">
             <span>Password</span>
-            <input type="password" id="register-pass">
+            <input type="password" id="register-form__pass">
         </div>
         <div class="auth-bg__input-field">
             <span>Repeat Password</span>
-            <input type="password" id="register-pass2">
+            <input type="password" id="register-form__pass2">
         </div>
         <div class="auth-bg__input-field">
             <span>Email</span>
             <input type="text" id="register-mail">
         </div>
-        <input type="button" value="Register">
+        <input type="button" value="Register" onclick="register('register-form__login', 'register-form__pass', 'register-form__pass2')">
     </div>
 </div>
-
-
-
-
 </body>
 </html>

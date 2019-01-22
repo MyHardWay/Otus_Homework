@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- <link rel="stylesheet/less" type="text/css"  href="styles.less"> -->
     <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.3/less.min.js" ></script> -->
-     <script src="app.js"></script>
+     <script src="../dist/bundle.js"></script>
 </head>
 <body>
 <div class="auth-bg">
@@ -14,13 +14,13 @@
         <h2>Login</h2>
         <div class="auth-bg__input-field">
              <span>Login</span>
-             <input type="text" id="login-login">
+             <input type="text" id="login-form__login">
         </div>
         <div class="auth-bg__input-field">
               <span>Password</span>
-             <input type="text" id="login-pass">
+             <input type="text" id="login-form__pass">
         </div>
-        <input type="button" value="Login">
+        <input type="button" value="Login" onclick="login('login-form__login', 'login-form__pass')">
     </div>
 </div>
 
