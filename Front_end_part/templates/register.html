@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <title>Сайт с курсами</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- <link rel="stylesheet/less" type="text/css"  href="styles.less"> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.3/less.min.js" ></script> -->
+    <link rel="stylesheet/less" type="text/css"  href="styles.less"> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.3/less.min.js" ></script>
      <script src="../dist/bundle.js"></script>
 </head>
 <body>
-<div class="auth-bg">
-    <div class="auth-bg__form register-form">
+<div class="authorization-background">
+    <div class="authorization-background__form register-form">
         <h2>Register</h2>
-        <div class="auth-bg__input-field">
+        <div class="authorization-background__input-field">
             <span>Login</span>
             <input type="text" id="register-form__login">
         </div>
-        <div class="auth-bg__input-field">
+        <div class="authorization-background__input-field">
             <span>Password</span>
             <input type="password" id="register-form__pass">
         </div>
-        <div class="auth-bg__input-field">
+        <div class="authorization-background__input-field">
             <span>Repeat Password</span>
             <input type="password" id="register-form__pass2">
         </div>
-        <input type="button" value="Register" onclick="register('#register-form__login', '#register-form__pass', '#register-form__pass2')">
+        <input type="button" class="authorization-background__button" value="Register" onclick="register('#register-form__login', '#register-form__pass', '#register-form__pass2')">
     </div>
 </div>
 </body>
