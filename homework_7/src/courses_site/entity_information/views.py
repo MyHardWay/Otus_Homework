@@ -6,6 +6,7 @@ from .models import Course
 from django.contrib.auth.forms import UserCreationForm
 from .serializers import CourseSerializer
 
+from ._common import  send_email_to_user, q
 
 class CourseViewSet(viewsets.ModelViewSet):
 
@@ -68,6 +69,7 @@ class RegisterView(views.APIView):
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
+            job = q.enqueue(send_email_to_user, form.cleaned_data.get('email'))
             login(request, user)
             return Response(status=status.HTTP_200_OK)
         return Response(status=status.HTTP_404_NOT_FOUND)
