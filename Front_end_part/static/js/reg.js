@@ -12,7 +12,6 @@ export function register (log_, pass_, pass2_) {
           },
         body: JSON.stringify(
             {'login': login_, 'password': passw_, 'password2': passw2_})})
-            .then(res=>res.json())
             .then(res => console.log(res));
 
 
