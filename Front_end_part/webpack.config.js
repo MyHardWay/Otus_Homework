@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 module.exports = {
@@ -13,13 +13,19 @@ module.exports = {
         rules: [
 
             {
-                test:/\.(less|css)$/, // .less and .css
+                test:/\.(less|css)$/,
                 use: [
                        MiniCssExtractPlugin.loader,
                        'css-loader',
                        'less-loader'
                 ]
-          }
+          },
+             {
+                 test: /\.js$/,
+                 use: {
+                    loader: 'babel-loader'
+                }
+             }
         ]
     },
 
@@ -29,8 +35,6 @@ module.exports = {
             jQuery: "jquery"
         }),
         new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
         filename: "styles.css",
         chunkFilename: '[id].css',
          })
