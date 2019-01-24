@@ -5,3 +5,4 @@ homework_6/src/webshop/db.sqlite3
 *.pyc
 node_modules
 package-lock.json
+v8-compile-cache-0/
