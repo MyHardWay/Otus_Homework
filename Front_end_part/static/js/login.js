@@ -9,5 +9,5 @@ export function login (log_, pass_) {
           },
         body: JSON.stringify(
             {'login': login_, 'password': passw_})})
-            .then(res => console.log(res));
+     .then(res => console.log(res));
 }
