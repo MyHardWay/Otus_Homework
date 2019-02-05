@@ -22,9 +22,8 @@ module.exports = {
           },
              {
                  test: /\.js$/,
-                 use: {
-                    loader: 'babel-loader'
-                }
+                 use: ['babel-loader', 'eslint-loader']
+
              }
         ]
     },
