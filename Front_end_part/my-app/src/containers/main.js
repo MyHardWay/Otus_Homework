@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Banner from "./banner";
-import Footer from "./footer";
-import Header from "./header";
-import Pop_courses from "./pop-courses";
-import Teachers from "./teachers";
+import Banner from "../components/banner";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import PopCourses from "../components/pop-courses";
+import Teachers from "../components/teachers";
 
 
 const teachers_array = [
@@ -58,7 +58,7 @@ const courses_array = [
 
 
 
-class App extends Component {
+class MainPage extends Component {
   render() {
   return (
     <div>
@@ -73,4 +73,4 @@ class App extends Component {
   }}
 
 
-export default App;
+export default MainPage;

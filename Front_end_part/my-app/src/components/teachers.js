@@ -2,9 +2,9 @@ import React from 'react';
 
 const Teachers = (props) => {
 
-    const teachersItems = props.teachers_array.map((teacher_) =>
-       <div className="teachers__card">
-            <a><img src={teacher_.img}></img></a>
+    const teachersItems = props.teachers_array.map((teacher_, i) =>
+       <div className="teachers__card" key={i}>
+            <a href='/'><img src={teacher_.img} alt=''></img></a>
                 <div className="card__fio">{teacher_.fio}</div>
                 <div className="card__company">{teacher_.company}</div>
                 <div className="card__position">{teacher_.position}</div>

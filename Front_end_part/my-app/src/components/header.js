@@ -4,16 +4,16 @@ const Header = () => (
       <div className="header">
             <div className="container">
                 <div className="header__item">
-                    <a href="#">Courses</a>
+                    <a href="/">Courses</a>
                 </div>
                 <div className="header__item">
-                    <a src="#">Job in company's</a>
+                    <a href="/">Job in company's</a>
                 </div>
                 <div className="header__item">
-                    <a src="#">For our partners</a>
+                    <a href="/">For our partners</a>
                 </div>
                 <div className="header__item">
-                    <a src="#">Blog</a>
+                    <a href="/">Blog</a>
                 </div>
             </div>
     </div>

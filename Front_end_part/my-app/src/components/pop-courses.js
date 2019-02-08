@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Pop_courses = (props) => {
+const PopCourses = (props) => {
 
-    const coursesItems = props.courses_array.map(course_ =>
-       <div className="pop-courses__card">
+    const coursesItems = props.courses_array.map((course_, i) =>
+       <div className="pop-courses__card" key={i}>
             <a href={course_.url}><img src={course_.img} ></img></a>
             <span>{course_.descr}</span>
        </div>
@@ -20,4 +20,4 @@ const Pop_courses = (props) => {
     )
 };
 
-export default Pop_courses;
+export default PopCourses;
