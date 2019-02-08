@@ -11,6 +11,10 @@ class Dev(Configuration):
     SECRET_KEY = os.environ.get('secret_KEY')
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+    EMAIL_HOST = 'localhost'
+    DEFAULT_EMAIL_FROM = 'otus@mail.ru'
+
+
     INSTALLED_APPS = [
         'django.contrib.admin',
         'django.contrib.auth',
