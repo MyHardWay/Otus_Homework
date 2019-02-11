@@ -14,10 +14,10 @@ class Course(models.Model):
 
     title = models.CharField(max_length=64, unique=True)
     prize = models.IntegerField()
-    language = models.ForeignKey(Language)
-    img_path = models.CharField(max_length=128, unique=True)
+    language = models.ForeignKey(Language, null=True)
+    img_path = models.CharField(max_length=128)
     teacher = models.ForeignKey(settings.AUTH_USER_MODEL,
-                                related_name='course_teacher')
+                                related_name='course_teacher', null=True)
     students = models.ManyToManyField(settings.AUTH_USER_MODEL,
                                       related_name='course_students')
 
