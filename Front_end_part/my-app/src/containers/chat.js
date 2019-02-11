@@ -52,7 +52,7 @@ class Chat extends Component {
               <button onClick={this.props.closePopup}>close me</button>
               <textarea className='chat__textfield' value={this.props.history} readOnly></textarea>
               <input className='chat__input' value={this.state.msg} onChange={this.handleChange} type="text" name='msg'></input>
-              <input className="authorization-background__button" type="button" value="Отправить" onClick={this.handleSubmit}></input>
+              <input type="button" value="Отправить" onClick={this.handleSubmit}></input>
               </div>
           )
       }
