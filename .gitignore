@@ -6,4 +6,4 @@ homework_6/src/webshop/db.sqlite3
 node_modules
 package-lock.json
 v8-compile-cache-0/
-
+.coverage

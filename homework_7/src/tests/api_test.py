@@ -1,17 +1,29 @@
-import unittest
-from rest_framework.test import APIClient
-from django.conf import settings
 import sys
-sys.path.append('../')
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR + '/courses_site')
+sys.path.append(BASE_DIR + '/courses_site/course_site')
 
-from homework_7.src.courses_site.entity_information.models import (
+from configurations import importer
+importer.install()
+
+import django
+django.setup()
+
+import unittest
+from django.conf import settings
+from rest_framework.test import APIClient
+
+
+from entity_information.models import (
     Language, Course, Lesson, Profile)
 
 
-class TestModels(unittest.TestCase):
+class TestApp(unittest.TestCase):
 
     def setUp(self):
-        self.course_ = Course.objects.create(title="test_course", prize=130)
+        self.course_ = Course.objects.create(
+            title="test_course1", prize=130, img_path='/')
         self.basic_user = settings.AUTH_USER_MODEL.objects.create()
         self.profile_ = Profile.objects.create(
             name="test_user", user=self.basic_user, password='test_user')
@@ -40,7 +52,8 @@ class TestModels(unittest.TestCase):
 
     def test_add_course_to_student_by_api(self):
         response = self.client.post(
-            '/api/user/', {'name': 'test_user', 'course': self.course_.id})
+            '/api/user/', {
+                'name': self.profile_.name, 'course': self.course_.id})
         self.assertTrue(response.status_code == 200)
         self.assertTrue(
             self.course_.id in Profile.ordering.get(id=self.course_).id)
@@ -69,7 +82,7 @@ class TestModels(unittest.TestCase):
         self.lesson_.delete()
         self.basic_user.delete()
         self.language_.delete()
-        Profile.objects.get(name='test_2').delete()
+        Profile.objects.get(name='test_user2').delete()
 
 
 if __name__ == '__main__':
