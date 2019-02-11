@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Banner from "../components/banner";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import PopCourses from "../components/pop-courses";
+import PopCourses from "../components/PopCourses";
 import Teachers from "../components/teachers";
 
 
@@ -58,19 +58,16 @@ const courses_array = [
 
 
 
-class MainPage extends Component {
-  render() {
-  return (
-    <div>
+const MainPage = () => (
+    <>
         <Header />
         <Banner />
         <PopCourses courses_array={courses_array}/>
         <Teachers teachers_array={teachers_array}/>
         <Footer />
-    </div>
+    </>
     )
 
-  }}
 
 
 export default MainPage;

@@ -19,8 +19,8 @@ class LoginPage extends Component {
   }
 
 
-
   handleSubmit = (event) => {
+      let {username, password} = this.state;
       fetch('http://127.0.0.1:4000/login/', {
       method: 'post',
       headers: {
@@ -28,11 +28,9 @@ class LoginPage extends Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(
-        { 'login': this.state.username, 'password': this.state.password }) })
+          {username: username, password: password})})
       .then(res => console.log(res))
   }
-
-
 
 
   render() {
@@ -42,13 +40,13 @@ class LoginPage extends Component {
                   <h2>Login</h2>
                   <div className="authorization-background__input-field">
                      <span>Login</span>
-                     <input value={this.state.username} onChange={this.handleChange} type="text" name='username'></input>
+                     <input value={this.state.username} onChange={this.handleChange} type="text" name='username'/>
                   </div>
                   <div className="authorization-background__input-field">
                       <span>Password</span>
-                     <input value={this.state.password} onChange={this.handleChange} type="password" name='password'></input>
+                     <input value={this.state.password} onChange={this.handleChange} type="password" name='password'/>
                   </div>
-                  <input className="authorization-background__button" type="button" value="Login" onClick={this.handleSubmit}></input>
+                  <input className="authorization-background__button" type="button" value="Login" onClick={this.handleSubmit}/>
               </div>
           </div>
       )

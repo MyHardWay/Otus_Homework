@@ -21,6 +21,7 @@ class RegistrationPage extends Component {
 
 
   handleSubmit = (event) => {
+    let {username: login, password, password2} = this.state
     fetch('http://127.0.0.1:4000/register/', {
     method: 'post',
     headers: {
@@ -28,7 +29,7 @@ class RegistrationPage extends Component {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(
-      { 'login': this.state.username, 'password': this.state.password, 'password2': this.state.password2 }) })
+      {login: login, password: password, password2: password2 }) })
     .then(res => console.log(res))
    }
 
