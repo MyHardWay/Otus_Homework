@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
-import Banner from "./banner";
-import Footer from "./footer";
-import Header from "./header";
-import Pop_courses from "./pop-courses";
-import Teachers from "./teachers";
-import Popup from 'reactjs-popup';
-import Chat from "../containers/chat";
-import {connect} from 'react-redux'
-
+import React from 'react';
+import Banner from "../components/banner";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Statement from "../components/statement"
 
 
 const teachers_array = [
@@ -60,30 +55,17 @@ const courses_array = [
 
 
 
-const mapStateToProps = state => ({
-  is_poped: state.is_poped,
-});
+
+
+const StatementPage = () => (
+    <>
+        <Header />
+        <Banner />
+        <Statement courses_array={courses_array}/>
+        <Footer />
+    </>
+    )
 
 
 
-const App = ({is_poped}) => (
- (
-            <div>
-
-                <Header />
-                <Banner />
-                <PopCourses courses_array={courses_array}/>
-                <Teachers teachers_array={teachers_array}/>
-                <Footer />
-                {is_poped ?
-                 <Popup open={is_poped}>
-                    <Chat />
-                  </Popup>
-                 : null
-                    }
-
-            </div>
-        )
-
-
-export default connect(mapStateToProps)(App);
+export default StatementPage;

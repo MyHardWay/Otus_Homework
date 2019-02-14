@@ -1,48 +1,45 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
-import Chat from "../containers/chat";
+import Chat from '../containers/chat';
+import {PopUp} from '../actions/appActions'
+import { connect} from 'react-redux'
 
-class Header extends Component {
-    constructor() {
-        super();
-        this.state = {
-            showPopup: false
-        };
-    }
 
-    togglePopup() {
 
-        this.setState({
-            showPopup: !this.state.showPopup
-        });
-    }
+const mapStateToProps = state => ({
+  is_poped: state.is_poped,
+});
 
-    render() {
+
+
+const mapDispatchToProps = dispatch => ({
+    PopUp: is_poped => dispatch(PopUp()),
+})
+
+
+
+class Header extends Component{
+
+    render(){
     return (
         <div className="header">
             <div className="container">
                 <div className="header__item">
-                    <a href="/">Courses</a>
+                    <a href="/">Students cabinet</a>
                 </div>
                 <div className="header__item">
-                    <a href="/">Job in companys</a>
+                    <a href="/">Teachers cabinet</a>
                 </div>
                 <div className="header__item">
                     <a href="/">For our partners</a>
                 </div>
                 <div className="header__item">
-                    <a onClick={this.togglePopup.bind(this)}>Chat</a>
+                    <a onClick={this.props.PopUp}>Chat</a>
                 </div>
             </div>
-            {this.state.showPopup ?
-                 <Popup open={this.state.showPopup}>
-                    <Chat />
-                  </Popup>
-                 : null
-            }
     </div>
-    )}
+    )
+    }
 }
 
-
-export default Header;
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
