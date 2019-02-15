@@ -4,6 +4,9 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import PopCourses from "../components/PopCourses";
 import Teachers from "../components/teachers";
+import Popup from 'reactjs-popup';
+import Chat from "../containers/chat";
+import {connect} from 'react-redux'
 
 
 const teachers_array = [
@@ -56,18 +59,30 @@ const courses_array = [
 
 
 
-
-
-const MainPage = () => (
-    <>
-        <Header />
-        <Banner />
-        <PopCourses courses_array={courses_array}/>
-        <Teachers teachers_array={teachers_array}/>
-        <Footer />
-    </>
-    )
+const mapStateToProps = state => ({
+  is_poped: state.is_poped,
+});
 
 
 
-export default MainPage;
+const MainPage = ({is_poped}) => (
+
+            <div>
+
+                <Header />
+                <Banner />
+                <PopCourses courses_array={courses_array}/>
+                <Teachers teachers_array={teachers_array}/>
+                <Footer />
+                {is_poped ?
+                 <Popup open={is_poped}>
+                    <Chat />
+                  </Popup>
+                 : null
+                    }
+
+            </div>
+        )
+
+
+export default connect(mapStateToProps)(MainPage);
