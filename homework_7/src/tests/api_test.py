@@ -1,5 +1,10 @@
 import sys
 import os
+
+from django.conf import settings
+from django.test import TestCase
+
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR + '/courses_site')
 sys.path.append(BASE_DIR + '/courses_site/course_site')
@@ -10,8 +15,8 @@ importer.install()
 import django
 django.setup()
 
-import unittest
-from django.conf import settings
+
+
 from rest_framework.test import APIClient
 
 
@@ -19,7 +24,7 @@ from entity_information.models import (
     Language, Course, Lesson, Profile)
 
 
-class TestApp(unittest.TestCase):
+class TestApp(TestCase):
 
     def setUp(self):
         self.course_ = Course.objects.create(
@@ -85,5 +90,4 @@ class TestApp(unittest.TestCase):
         Profile.objects.get(name='test_user2').delete()
 
 
-if __name__ == '__main__':
-    unittest.main()
+
