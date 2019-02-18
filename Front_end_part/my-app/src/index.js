@@ -1,7 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import { Route} from 'react-router';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom'
 import { Provider } from "react-redux";
 import { appStore } from './store/appStore';
 
@@ -15,12 +14,13 @@ import * as serviceWorker from './serviceWorker';
 import ReactDOM from 'react-dom';
 
 import "./styles.css";
+import {chat_submit} from './chat-service.js'
 
 const store = appStore;
 
 ReactDOM.render(
 <Provider store={store}>
-    <Router>
+
         <Switch>
             <Route exact path='/' component={MainPage}/>
             <Route path='/login' component={LoginPage}/>
@@ -29,7 +29,7 @@ ReactDOM.render(
             <Route path='/statement' component={StatementPage}/>
             <Route path='/lessons' component={LessonsPage}/>
         </Switch>
-    </Router>
+
 </Provider>,
   document.getElementById("root")
 );

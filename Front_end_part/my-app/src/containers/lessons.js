@@ -5,49 +5,22 @@ import Header from "../components/header";
 import Lessons from "../components/lessons";
 
 
-const teachers_array = [
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    },
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    },
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    },
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    }
-];
 
-
-const courses_array = [
+const lessons_array = [
     {
-        url: "course.html",
-        img: "https://cdn-images-1.medium.com/max/1600/1*ZXixptvL4rzkx3EDuj38xw.jpeg",
-        descr: "Description"
+        id: 1,
+        name: "Ansible",
+        date: "18 oct 2014"
     },
     {
-        url: "course.html",
-        img: "https://cdn-images-1.medium.com/max/1600/1*ZXixptvL4rzkx3EDuj38xw.jpeg",
-        descr: "Description"
+        id: 2,
+        name: "SOLID",
+        date: "18 oct 2014"
     },
     {
-        url: "course.html",
-        img: "https://cdn-images-1.medium.com/max/1600/1*ZXixptvL4rzkx3EDuj38xw.jpeg",
-        descr: "Description"
+        id: 3,
+        name: "DRY",
+        date: "18 oct 2014"
     }
 
 
@@ -61,7 +34,7 @@ const LessonsPage = () => (
     <>
         <Header />
         <Banner />
-        <Lessons courses_array={courses_array}/>
+        <Lessons lessons_array={lessons_array}/>
         <Footer />
     </>
     )

@@ -5,10 +5,10 @@ const CoursesList = ({courses_array}) => {
     const coursesItems = courses_array.map((course, i) =>
 
 
-        <div class="user-courses__item">
+        <div class="user-courses__item" key={i}>
              <h2>{course.title}</h2>
              <p>{course.descr}</p>
-             <a class="user-courses__link">{course.link}</a>
+             <a class="user-courses__link" href= {course.link}>Перейти -></a>
         </div>
 
     );

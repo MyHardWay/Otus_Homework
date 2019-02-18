@@ -5,48 +5,21 @@ import Header from "../components/header";
 import CoursesList from "../components/CoursesList"
 
 
-const teachers_array = [
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    },
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    },
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    },
-    {
-        img: "https://d210i8t551lxm.cloudfront.net/images/contents/000/001/355/original/teacher_teaser.jpg?1504864921",
-        fio: "Mikhail Jouravlev",
-        company: "IBM",
-        position: "Front-end developer"
-    }
-];
-
 
 const courses_array = [
     {
-        url: "course.html",
-        img: "https://cdn-images-1.medium.com/max/1600/1*ZXixptvL4rzkx3EDuj38xw.jpeg",
+        title: "course.html",
+        link: "/lessons",
         descr: "Description"
     },
     {
-        url: "course.html",
-        img: "https://cdn-images-1.medium.com/max/1600/1*ZXixptvL4rzkx3EDuj38xw.jpeg",
+        title: "course.html",
+        link: "/lessons",
         descr: "Description"
     },
     {
-        url: "course.html",
-        img: "https://cdn-images-1.medium.com/max/1600/1*ZXixptvL4rzkx3EDuj38xw.jpeg",
+        title: "course.html",
+        link: "/lessons",
         descr: "Description"
     }
 
@@ -65,7 +38,6 @@ const CoursesPage = () => (
         <Footer />
     </>
     )
-
 
 
 export default CoursesPage;

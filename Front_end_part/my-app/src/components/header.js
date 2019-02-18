@@ -3,35 +3,30 @@ import Popup from 'reactjs-popup';
 import Chat from '../containers/chat';
 import {PopUp} from '../actions/appActions'
 import { connect} from 'react-redux'
-
-
-
-const mapStateToProps = state => ({
-  is_poped: state.is_poped,
-});
-
+import { Link } from 'react-router-dom'
 
 
 const mapDispatchToProps = dispatch => ({
-    PopUp: is_poped => dispatch(PopUp()),
+    PopUp: is_poped => dispatch(PopUp(is_poped)),
 })
 
 
 
 class Header extends Component{
 
+
     render(){
     return (
         <div className="header">
             <div className="container">
                 <div className="header__item">
-                    <a href="/">Students cabinet</a>
+                    <Link to="/course">Students cabinet</Link>
                 </div>
                 <div className="header__item">
-                    <a href="/">Teachers cabinet</a>
+                    <Link to="/сourse">Teachers cabinet</Link>
                 </div>
                 <div className="header__item">
-                    <a href="/">For our partners</a>
+                    <Link to="/">For our partners</Link>
                 </div>
                 <div className="header__item">
                     <a onClick={this.props.PopUp}>Chat</a>
@@ -42,4 +37,4 @@ class Header extends Component{
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(null, mapDispatchToProps)(Header);

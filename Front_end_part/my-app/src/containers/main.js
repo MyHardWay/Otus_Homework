@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Banner from "../components/banner";
 import Footer from "../components/footer";
 import Header from "../components/header";
@@ -7,6 +7,7 @@ import Teachers from "../components/teachers";
 import Popup from 'reactjs-popup';
 import Chat from "../containers/chat";
 import {connect} from 'react-redux'
+import {PopUp} from '../actions/appActions'
 
 
 const teachers_array = [
@@ -58,6 +59,10 @@ const courses_array = [
 ];
 
 
+const mapDispatchToProps = dispatch => ({
+    PopUp: is_poped => dispatch(PopUp(is_poped)),
+})
+
 
 const mapStateToProps = state => ({
   is_poped: state.is_poped,
@@ -65,24 +70,31 @@ const mapStateToProps = state => ({
 
 
 
-const MainPage = ({is_poped}) => (
+class MainPage extends Component{
 
-            <div>
+
+
+
+    render(){
+    return (
+        <div>
 
                 <Header />
                 <Banner />
                 <PopCourses courses_array={courses_array}/>
                 <Teachers teachers_array={teachers_array}/>
                 <Footer />
-                {is_poped ?
-                 <Popup open={is_poped}>
+                {this.props.is_poped ?
+                 <Popup open={this.props.is_poped} onClose={this.props.PopUp}>
                     <Chat />
                   </Popup>
                  : null
                     }
 
             </div>
-        )
+    )
+    }
+}
 
 
-export default connect(mapStateToProps)(MainPage);
+export default connect(mapStateToProps, mapDispatchToProps)(MainPage);

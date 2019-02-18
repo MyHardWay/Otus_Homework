@@ -21,23 +21,23 @@ const Lessons = ({lessons_array}) => {
                 <h1>Lessons</h1>
 
             <div class="lessons__status">
-                 <div class="lessons__param">1</div>
-                 <p>Technical supports</p>
+                 <div class="lessons__param">Начало занятий</div>
+                 <p>28 oct 2014</p>
             </div>
             <div class="lessons__status">
-                 <div class="lessons__param">1</div>
-                 <p>Technical supports</p>
+                 <div class="lessons__param">Дата выдачи сертификата</div>
+                 <p>21 февраля</p>
             </div>
             <div class="lessons__status">
-                 <div class="lessons__param">1</div>
-                 <p>Technical supports</p>
+                 <div class="lessons__param">Сдано ДЗ</div>
+                 <p>17 из 27</p>
             </div>
             <div class="lessons__status">
-                 <div class="lessons__param">1</div>
-                 <p>Technical supports</p>
+                 <div class="lessons__param">Оценка за тест</div>
+                 <p>B</p>
             </div>
             <div class="lessons__status">
-                 <div class="lessons__param">1</div>
+                 <div class="lessons__param">Календарь</div>
                  <p>Technical supports</p>
             </div>
              {lessonsItems}

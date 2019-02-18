@@ -1,8 +1,12 @@
-const reducer = (state, action) => {
+const reducer = (state = {}, action) => {
     switch (action.type) {
         case "POP_UP":
             console.log(state);
-            return !state
+            console.log(action.is_poped);
+
+            return {
+            is_poped: !state.is_poped
+            }
         default:
         return state;
   }

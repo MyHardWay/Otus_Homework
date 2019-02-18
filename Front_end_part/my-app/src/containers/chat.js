@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {chat_submit, load_history} from '../chat-service.js'
 
 class Chat extends Component {
 
@@ -12,12 +13,7 @@ class Chat extends Component {
   }
 
   componentDidMount () {
-        fetch('http://127.0.0.1:4000/gethistory/' + this.props.id, {
-        method: 'post',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        }})
+        load_history(this.props.id)
         .then(res => (this.props.history = res.data.history))
         }
 
@@ -31,16 +27,7 @@ class Chat extends Component {
 
   handleSubmit = (event) => {
 
-      fetch('http://127.0.0.1:4000/sendmsg/' + this.props.id, {
-      method: 'post',
-      headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(
-          {
-              'msg': this.state.msg
-          })})
+      chat_submit(this.props.id, this.props.msg)
       .then(res => this.setState({
             msg: ''
           }))

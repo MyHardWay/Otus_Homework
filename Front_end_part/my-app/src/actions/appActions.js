@@ -6,9 +6,10 @@ export const setVisibility = (state) => {
 }
 
 export const PopUp = (state) => {
+  console.log(state);
   return {
     type: 'POP_UP',
-    state
+    is_poped: state
   }
 }
 
