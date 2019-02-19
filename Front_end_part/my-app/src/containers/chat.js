@@ -9,12 +9,15 @@ class Chat extends Component {
 
     this.state = {
         msg: '',
+        msgHistory: ''
     };
   }
 
   componentDidMount () {
         load_history(this.props.id)
-        .then(res => (this.props.history = res.data.history))
+        .then(res => (this.setState({
+            msgHistory: res.data.msgHistory
+          }))
         }
 
 
@@ -27,17 +30,17 @@ class Chat extends Component {
 
   handleSubmit = (event) => {
 
-      chat_submit(this.props.id, this.props.msg)
+      chat_submit(this.props.id, this.state.msg)
       .then(res => this.setState({
-            msg: ''
+            msg: '',
+            msgHistory: res.data.msgHistory
           }))
       }
       render() {
           return (
               <div className='chat'>
               <h2 >Chating</h2>
-              <button onClick={this.props.closePopup}>close me</button>
-              <textarea className='chat__textfield' value={this.props.history} readOnly></textarea>
+              <textarea className='chat__textfield' value={this.state.msgHistory} readOnly></textarea>
               <input className='chat__input' value={this.state.msg} onChange={this.handleChange} type="text" name='msg'></input>
               <input type="button" value="Отправить" onClick={this.handleSubmit}></input>
               </div>
@@ -45,9 +48,6 @@ class Chat extends Component {
       }
   }
 
-   Chat.defaultProps = {
-       history: ''
-   };
 
    Chat.propTypes = {
        id: PropTypes.number
